@@ -6,7 +6,8 @@ window.App = require('app');
 //////////////////////////////////
 
 require('templates/application');
-require('templates/index');
+//require('templates/index');
+require('templates/tables');
 
 //////////////////////////////////
 // Models
@@ -29,7 +30,7 @@ require('templates/index');
 /////////////////////////////////
 // Routes
 /////////////////////////////////
-
+require('routes/IndexRoute')
 
 
 /////////////////////////////////
@@ -43,9 +44,8 @@ App.Store = DS.Store.extend({
 /////////////////////////////////
 // Router
 /////////////////////////////////
+require('router')
 
-App.Router.map(function() {
-  this.route('index', { path: '/'});
-});
+
 
 App.initialize();
