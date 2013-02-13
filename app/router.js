@@ -1,9 +1,12 @@
-// App.Router.map(function() {
+// Helpdesk.Router.map(function() {
 //   this.route('index', { path: '/'});
 // });
 
-App.Router.map(function() {
-  this.resource('tables', function() {
-    this.resource('table', {path: ':table_id' });
-  });    // /#/tables
+Helpdesk.Router.map(function() {
+	this.resource('dashboard', {paths: "/dashboard"});
+	
+	this.resource('tickets', function() {
+		this.resource('ticket', {path: ':ticket_category' });
+	});
+
 });

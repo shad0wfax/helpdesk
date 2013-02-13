@@ -1,13 +1,11 @@
-
-window.App = require('app');
+window.Helpdesk = require('app');
 
 //////////////////////////////////
 // Templates
 //////////////////////////////////
 
 require('templates/application');
-//require('templates/index');
-require('templates/tables');
+require('templates/dashboard');
 
 //////////////////////////////////
 // Models
@@ -24,28 +22,29 @@ require('templates/tables');
 /////////////////////////////////
 // Views
 /////////////////////////////////
+require('views/DashboardView');
 
 
 
 /////////////////////////////////
 // Routes
 /////////////////////////////////
-require('routes/IndexRoute')
+require('routes/IndexRoute');
 
 
 /////////////////////////////////
 // Store
 /////////////////////////////////
 
-App.Store = DS.Store.extend({
+Helpdesk.Store = DS.Store.extend({
   revision: 11
 });
 
 /////////////////////////////////
 // Router
 /////////////////////////////////
-require('router')
+require('router');
 
 
 
-App.initialize();
+Helpdesk.initialize();
