@@ -33,12 +33,19 @@ require('routes/IndexRoute');
 
 
 /////////////////////////////////
+// Init
+/////////////////////////////////
+require('init/DashboardInit');
+
+
+/////////////////////////////////
 // Store
 /////////////////////////////////
+	// Helpdesk.Store = DS.Store.extend({
+	//   revision: 11
+	// });
+require('store');
 
-Helpdesk.Store = DS.Store.extend({
-  revision: 11
-});
 
 /////////////////////////////////
 // Router

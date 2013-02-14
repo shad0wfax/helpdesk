@@ -1137,7 +1137,6 @@
 	/* ---------- Charts ---------- */
 
 	function charts() {
-		alert("Coming from charts");
 		
 		function randNum(){
 			return ((Math.floor( Math.random()* (1+40-20) ) ) + 20)* 1200;
