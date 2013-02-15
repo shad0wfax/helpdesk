@@ -16,36 +16,11 @@ exports.config =
       order: 
         before: [
           'vendor/scripts/console-helper.js',
-          'vendor/scripts/acme/jquery-1.8.3.min.js',
+          'vendor/scripts/acme/jquery-1.9.1.min.js',
+          'vendor/scripts/acme/jquery-migrate-1.0.0.min.js',
           'vendor/scripts/handlebars-1.0.rc.2.js',
           'vendor/scripts/ember-latest.js',
-          'vendor/scripts/ember-data-latest.js',
-          'vendor/scripts/acme/jquery-ui-1.8.21.custom.min.js',
-          'vendor/scripts/acme/modernizr.js',
-          'vendor/scripts/bootstrap.js',
-          'vendor/scripts/acme/jquery.cookie.js',
-          'vendor/scripts/acme/fullcalendar.min.js',
-          'vendor/scripts/acme/jquery.dataTables.min.js',
-          'vendor/scripts/acme/excanvas.js',
-          'vendor/scripts/acme/jquery.flot.js',
-          'vendor/scripts/acme/jquery.flot.pie.js',
-          'vendor/scripts/acme/jquery.flot.resize.min.js',
-          'vendor/scripts/acme/jquery.flot.stack.js',
-          'vendor/scripts/acme/jquery.chosen.min.js',
-          'vendor/scripts/acme/jquery.uniform.min.js',
-          'vendor/scripts/acme/jquery.cleditor.min.js',
-          'vendor/scripts/acme/jquery.noty.js',
-          'vendor/scripts/acme/jquery.elfinder.min.js',
-          'vendor/scripts/acme/jquery.raty.min.js',
-          'vendor/scripts/acme/jquery.iphone.toggle.js',
-          'vendor/scripts/acme/jquery.uploadify-3.1.min.js',
-          'vendor/scripts/acme/jquery.gritter.min.js',
-          'vendor/scripts/acme/jquery.imagesloaded.js',
-          'vendor/scripts/acme/jquery.masonry.min.js',
-          'vendor/scripts/acme/jquery.knob.modified.js',
-          'vendor/scripts/acme/jquery.sparkline.min.js',
-          'vendor/scripts/acme/counter.js',
-          'vendor/scripts/acme/retina.js'
+          'vendor/scripts/ember-data-latest.js'
         ]
 
     stylesheets:
