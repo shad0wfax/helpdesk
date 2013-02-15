@@ -30,26 +30,22 @@ exports.config =
         before: [
           'vendor/styles/acme/bootstrap.css',
           'vendor/styles/acme/bootstrap-responsive.css',
-          'vendor/styles/acme/chosen.css',
-          'vendor/styles/acme/elfinder.min.css',
-          'vendor/styles/acme/elfinder.theme.css',
-          'vendor/styles/acme/font-awesome-ie7.css',
-          'vendor/styles/acme/font-awesome.css',
-          'vendor/styles/acme/fullcalendar.css',
-          'vendor/styles/acme/glyphicons.css',
-          'vendor/styles/acme/halflings.css',
-          'vendor/styles/acme/ie.css',
-          'vendor/styles/acme/ie9.css',
           'vendor/styles/acme/jquery-ui-1.8.21.custom.css',
+          'vendor/styles/acme/fullcalendar.css',
+          'vendor/styles/acme/chosen.css',
+          'vendor/styles/acme/uniform.default.css',
           'vendor/styles/acme/jquery.cleditor.css',
-          'vendor/styles/acme/jquery.gritter.css',
-          'vendor/styles/acme/jquery.iphone.toggle.css',
           'vendor/styles/acme/jquery.noty.css',
           'vendor/styles/acme/noty_theme_default.css',
-          'vendor/styles/acme/style-responsive.css',
-          'vendor/styles/acme/style.css',
-          'vendor/styles/acme/uniform.default.css',
-          'vendor/styles/acme/uploadify.css'
+          'vendor/styles/acme/elfinder.min.css',
+          'vendor/styles/acme/elfinder.theme.css',
+          'vendor/styles/acme/jquery.iphone.toggle.css',
+          'vendor/styles/acme/uploadify.css',
+          'vendor/styles/acme/jquery.gritter.css',
+          'vendor/styles/acme/font-awesome.css',
+          'vendor/styles/acme/font-awesome-ie7.css',
+          'vendor/styles/acme/glyphicons.css',
+          'vendor/styles/acme/halflings.css'
         ]
 
     templates:
