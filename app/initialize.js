@@ -3,9 +3,10 @@ window.Helpdesk = require('app');
 //////////////////////////////////
 // Templates
 //////////////////////////////////
-
 require('templates/application');
-require('templates/dashboard');
+require('templates/_navbar');
+require('templates/dashboard')
+require('templates/_footer');;
 
 //////////////////////////////////
 // Models

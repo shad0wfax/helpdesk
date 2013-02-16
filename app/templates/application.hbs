@@ -1,2 +1,12 @@
- {{outlet}}
- 
+<!-- start: Wrapper -->
+<div id="wrapper">	
+	{{partial "navbar"}}
+
+	<div id="content-master"> 
+		{{outlet}}
+	</div>
+	
+	<div class="clearfix"></div>
+	{{partial "footer"}}
+</div>
+<!-- End: Wrapper -->
