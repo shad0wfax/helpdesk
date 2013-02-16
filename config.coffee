@@ -18,7 +18,7 @@ exports.config =
           'vendor/scripts/console-helper.js',
           'vendor/scripts/acme/jquery-1.9.1.min.js',
           'vendor/scripts/acme/jquery-migrate-1.0.0.min.js',
-          'vendor/scripts/handlebars-1.0.rc.2.js',
+          'vendor/scripts/handlebars-1.0.0.rc.3.js',
           'vendor/scripts/ember-latest.js',
           'vendor/scripts/ember-data-latest.js'
         ]
