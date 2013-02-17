@@ -5,8 +5,9 @@ window.Helpdesk = require('app');
 //////////////////////////////////
 require('templates/application');
 require('templates/_navbar');
-require('templates/dashboard')
-require('templates/_footer');;
+require('templates/dashboard');
+require('templates/_footer');
+require('templates/_leftnav');
 
 //////////////////////////////////
 // Models
