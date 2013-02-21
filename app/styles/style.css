@@ -622,6 +622,17 @@ a.brand span {
           	border-radius: 0px;
 }
 
+/* Akshay changed li.active to a.active wrt ember linkTo tag */
+.nav-list > li > a.active {
+    color: #424242;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+    background-color: #67C2EF;
+}
+.nav-list > li > a {
+    font-size: 13px;
+}
+
+
 .navbar .nav li.dropdown.open > .dropdown-toggle,
 .navbar .nav li.dropdown.active > .dropdown-toggle,
 .navbar .nav li.dropdown.open.active > .dropdown-toggle {

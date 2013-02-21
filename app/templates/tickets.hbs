@@ -1,368 +1,202 @@
-     <!-- start: Header -->
-     
-          <div class="container-fluid">
-          <div class="row-fluid">
-               
-               {{partial "leftnav"}}                    
-               
-               <noscript>
-                    <div class="alert alert-block span11">
-                         <h4 class="alert-heading">Warning!</h4>
-                         <p>You need to have <a href="http://en.wikipedia.org/wiki/JavaScript" target="_blank">JavaScript</a> enabled to use this site.</p>
-                    </div>
-               </noscript>
-               
-               <!-- start: Content -->
-               <div id="content" class="span11">
-               
-               
-               <div class="row-fluid">
-                    
-                    <div class="stats-date span3">
-                         <div>Monthly Statistics</div>
-                         <div class="range">02/10/2012 - 02/11/2012</div>
-                    </div>
-                    
-                    <div class="stats span9">
-                         
-                         <div class="stat">
-                              <div class="left">
-                                   <div class="number green">1.324.996</div>
-                                   <div class="title"><span class="color green"></span> Visits</div>
-                              </div>
-                              <div class="right"> 
-                                   <div class="arrow">
-                                        <img src="img/acme/uparrow.png">
-                                   </div>
-                                   <div class="percent">+13%</div>
-                              </div>
-                         </div>
-                         
-                         <div class="stat">
-                              <div class="left">
-                                   <div class="number yellow">12.894.765</div>
-                                   <div class="title"><span class="color yellow"></span> Pageviews</div>
-                              </div>
-                              <div class="right"> 
-                                   <div class="arrow">
-                                        <img src="img/acme/uparrow.png">
-                                   </div>
-                                   <div class="percent">+17%</div>
-                              </div>
-                         </div>
-                         
-                         <div class="stat">
-                              <div class="left">
-                                   <div class="number blue">432.980</div>
-                                   <div class="title"><span class="color blue"></span>Visitors</div>
-                              </div>
-                              <div class="right"> 
-                                   <div class="arrow">
-                                        <img src="img/acme/downarrow.png">
-                                   </div>
-                                   <div class="percent">-33%</div>
-                              </div>
-                         </div>
-                         
-                         <div class="stat">
-                              <div class="left">
-                                   <div class="number red">11.324</div>
-                                   <div class="title"><span class="color red"></span>New Visitors</div>
-                              </div>
-                              <div class="right"> 
-                                   <div class="arrow">
-                                        <img src="img/acme/uparrow.png">
-                                   </div>
-                                   <div class="percent">+3%</div>
-                              </div>
-                         </div>
-                              
-                    </div>
-               
-               </div>    
+<!-- start: Header -->
 
-               <div class="row-fluid">
-                    
-                    <div id="stats-chart2"  class="span12" style="height:300px" ></div>
-               
-               </div>
-               
-               <hr>
-               
-               <div class="row-fluid">
-                    
-                    <div class="widget span5" onTablet="span12" onDesktop="span5">
-                         
-                         <h2><span class="glyphicons globe"><i></i></span> Demographics</h2>
-                         
-                         <hr>
-                         
-                         <div class="content">
-                              
-                              <div class="verticalChart">
-                                   
-                                   <div class="singleBar">
-                                   
-                                        <div class="bar">
-                                        
-                                             <div class="value">
-                                                  <span>37%</span>
-                                             </div>
-                                        
-                                        </div>
-                                        
-                                        <div class="title">US</div>
-                                   
-                                   </div>
-                                   
-                                   <div class="singleBar">
-                                   
-                                        <div class="bar">
-                                        
-                                             <div class="value">
-                                                  <span>16%</span>
-                                             </div>
-                                        
-                                        </div>
-                                        
-                                        <div class="title">PL</div>
-                                   
-                                   </div>
-                                   
-                                   <div class="singleBar">
-                                   
-                                        <div class="bar">
-                                        
-                                             <div class="value">
-                                                  <span>12%</span>
-                                             </div>
-                                        
-                                        </div>
-                                        
-                                        <div class="title">GB</div>
-                                   
-                                   </div>
-                                   
-                                   <div class="singleBar">
-                                   
-                                        <div class="bar">
-                                        
-                                             <div class="value">
-                                                  <span>9%</span>
-                                             </div>
-                                        
-                                        </div>
-                                        
-                                        <div class="title">DE</div>
-                                   
-                                   </div>
-                                   
-                                   <div class="singleBar">
-                                   
-                                        <div class="bar">
-                                        
-                                             <div class="value">
-                                                  <span>7%</span>
-                                             </div>
-                                        
-                                        </div>
-                                        
-                                        <div class="title">NL</div>
-                                   
-                                   </div>
-                                   
-                                   <div class="singleBar">
-                                   
-                                        <div class="bar">
-                                        
-                                             <div class="value">
-                                                  <span>6%</span>
-                                             </div>
-                                        
-                                        </div>
-                                        
-                                        <div class="title">CA</div>
-                                   
-                                   </div>
-                                   
-                                   <div class="singleBar">
-                                   
-                                        <div class="bar">
-                                        
-                                             <div class="value">
-                                                  <span>5%</span>
-                                             </div>
-                                        
-                                        </div>
-                                        
-                                        <div class="title">FI</div>
-                                   
-                                   </div>
-                                   
-                                   <div class="singleBar">
-                                   
-                                        <div class="bar">
-                                        
-                                             <div class="value">
-                                                  <span>4%</span>
-                                             </div>
-                                        
-                                        </div>
-                                        
-                                        <div class="title">RU</div>
-                                   
-                                   </div>
-                                   
-                                   <div class="singleBar">
-                                   
-                                        <div class="bar">
-                                        
-                                             <div class="value">
-                                                  <span>3%</span>
-                                             </div>
-                                        
-                                        </div>
-                                        
-                                        <div class="title">AU</div>
-                                   
-                                   </div>
-                                   
-                                   <div class="singleBar">
-                                   
-                                        <div class="bar">
-                                        
-                                             <div class="value">
-                                                  <span>1%</span>
-                                             </div>
-                                        
-                                        </div>
-                                        
-                                        <div class="title">N/A</div>
-                                   
-                                   </div>    
-                                   
-                              </div>
-                         
-                         </div>
-                         
-                    </div><!--/span-->
-                    
-                    <div class="widget span3 noMargin" onTablet="span6" onDesktop="span3">
-                         
-                         <h2><span class="glyphicons pie_chart"><i></i></span> Browsers</h2>
-                         
-                         <hr>
-                         
-                         <div class="content">
-                              
-                              <div class="browserStat big">
-                                   <img src="img/acme/browser-chrome-big.png" alt="Chrome">
-                                   <span>34%</span>
-                              </div>
-                              <div class="browserStat big">
-                                   <img src="img/acme/browser-firefox-big.png" alt="Firefox">
-                                   <span>34%</span>
-                              </div>
-                              <div class="browserStat">
-                                   <img src="img/acme/browser-ie.png" alt="Internet Explorer">
-                                   <span>34%</span>
-                              </div>
-                              <div class="browserStat">
-                                   <img src="img/acme/browser-safari.png" alt="Safari">
-                                   <span>34%</span>
-                              </div>
-                              <div class="browserStat">
-                                   <img src="img/acme/browser-opera.png" alt="Opera">
-                                   <span>34%</span>
-                              </div>    
-                                        
-                              
-                         </div>
+<div class="container-fluid">
+<div class="row-fluid">
+
+    <!-- Left nav -->
+    {{partial "leftnav"}}
+
+    <!-- start: Content -->
+    <div id="content" class="span11">
+        <div class="row-fluid">
+
+            <div class="span2">
+                <ul class="message nav nav-list">
+                    <li class="nav-header">Captures</li>
+                    <li class="divider"></li>
+                    <li>{{#linkTo tickets.ticket "highlights"}} {{t tickets.nav.highlights}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.ticket "photos"}} {{t tickets.nav.photos}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.ticket "audios"}} {{t tickets.nav.audios}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.ticket "videos"}} {{t tickets.nav.videos}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.ticket "forms"}} {{t tickets.nav.text}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.ticket "emails"}} {{t tickets.nav.emails}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.ticket "all"}} {{t tickets.nav.all}} {{/linkTo}}</li>
+                    <li class="nav-header">Tickets by status</li>
+                    <li class="divider"></li>
+                    <li>{{#linkTo tickets.ticket "open"}} {{t tickets.nav.open}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.ticket "pending"}} {{t tickets.nav.pending}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.ticket "hold"}} {{t tickets.nav.hold}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.ticket "closed"}} {{t tickets.nav.closed}} {{/linkTo}}</li>
+
+                </ul>
+             </div>
+
+
+            <div class="span6 dark">
+                <h1>Inbox</h1>
+
+                <ul class="messagesList noMarginLeft">
+
+                    <li>
+                        <span class="from"><span class="glyphicons star"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title"><span class="label label-warning">problem</span> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek</span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek</span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons star"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title"><span class="label label-success">task</span> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek</span><span class="title"><span class="label label-info">information</span> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons star"><i></i></span> Lukasz Holeczek</span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek</span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons star"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek</span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek</span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons star"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek</span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons star"><i></i></span> Lukasz Holeczek</span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+                    <li>
+                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek</span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
+                    </li>
+
+                </ul>
+
+            </div>
+            <div class="span4 noMarginLeft">
+
+                <div class="message dark">
+
+                    <div class="header">
+                        <h1>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.."</h1>
+                        <div class="from"><i class="halflings-icon user"></i> <b>Lukasz Holeczek</b> / lukasz@holeczek.pl</div>
+                        <div class="date"><i class="halflings-icon time"></i> Today, <b>3:47 PM</b></div>
+
+                        <div class="menu"></div>
+
                     </div>
-                    
-                    <div class="widget span4" onTablet="span6" onDesktop="span4">
-                         <h2><span class="glyphicons charts"><i></i></span> Weekly Stat</h2>
-                         
-                         <hr>
-                         
-                         <div class="content">
-                              <div class="sparkLineStats">
 
-                             <ul class="unstyled">
-                                 
-                                 <li><span class="sparkLineStats3"></span> 
-                                     Pageviews: 
-                                     <span class="number">781</span>
-                                 </li>
-                                 <li><span class="sparkLineStats4"></span>
-                                     Pages / Visit: 
-                                     <span class="number">2,19</span>
-                                 </li>
-                                 <li><span class="sparkLineStats5"></span>
-                                     Avg. Visit Duration: 
-                                     <span class="number">00:02:58</span>
-                                 </li>
-                                 <li><span class="sparkLineStats6"></span>
-                                     Bounce Rate: <span class="number">59,83%</span>
-                                 </li>
-                                 <li><span class="sparkLineStats7"></span>
-                                     % New Visits: 
-                                     <span class="number">70,79%</span>
-                                 </li>
-                                 <li><span class="sparkLineStats8"></span>
-                                     % Returning Visitor: 
-                                     <span class="number">29,21%</span>
-                                 </li>
+                    <div class="content">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                        <blockquote>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </blockquote>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        </p>
+                    </div>
 
-                             </ul>
-     
-                         </div><!-- End .sparkStats -->
-                         </div>
-                    </div><!--/span-->
-               
-               </div>
-               
-               <hr>
-               
-               <div class="row-fluid">
-                    
-                    <div class="widget span6" onTablet="span6" onDesktop="span6">
-                         <h2><span class="glyphicons facebook"><i></i></span>Facebook Fans</h2>
-                         <hr>
-                         <div class="content">
-                              <div id="facebookChart" style="height:300px" ></div>
-                         </div>
-                    </div><!--/span-->
-                    
-                    <div class="widget span6" onTablet="span6" onDesktop="span6">
-                         <h2><span class="glyphicons twitter"><i></i></span>Twitter Followers</h2>
-                         <hr>
-                         <div class="content">
-                              <div id="twitterChart" style="height:300px" ></div>
-                         </div>
-                    </div><!--/span-->
-               
-               </div>
-                    
-               
-       
-                         <!-- end: Content -->
-               </div><!--/#content.span10-->
-                    </div><!--/fluid-row-->
-                    
-          <div class="modal hide fade" id="myModal">
-               <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">×</button>
-                    <h3>Settings</h3>
-               </div>
-               <div class="modal-body">
-                    <p>Here settings can be configured...</p>
-               </div>
-               <div class="modal-footer">
-                    <a href="#" class="btn" data-dismiss="modal">Close</a>
-                    <a href="#" class="btn btn-primary">Save changes</a>
-               </div>
-          </div>
-          
-                    
-     </div><!--/.fluid-container-->
+                    <div class="attachments">
+                        <ul>
+                            <li>
+                                <span class="label label-important">zip</span> <b>bootstrap.zip</b> <i>(2,5MB)</i>
+									<span class="quickMenu">
+										<a href="#" class="glyphicons search"><i></i></a>
+										<a href="#" class="glyphicons share"><i></i></a>
+										<a href="#" class="glyphicons cloud-download"><i></i></a>
+									</span>
+                            </li>
+                            <li>
+                                <span class="label label-info">txt</span> <b>readme.txt</b> <i>(7KB)</i>
+									<span class="quickMenu">
+										<a href="#" class="glyphicons search"><i></i></a>
+										<a href="#" class="glyphicons share"><i></i></a>
+										<a href="#" class="glyphicons cloud-download"><i></i></a>
+									</span>
+                            </li>
+                            <li>
+                                <span class="label label-success">xls</span> <b>spreadsheet.xls</b> <i>(984KB)</i>
+									<span class="quickMenu">
+										<a href="#" class="glyphicons search"><i></i></a>
+										<a href="#" class="glyphicons share"><i></i></a>
+										<a href="#" class="glyphicons cloud-download"><i></i></a>
+									</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <form class="replyForm"method="post" action="">
+
+                        <fieldset>
+                            <textarea tabindex="3" class="input-xlarge span12" id="message" name="body" rows="12" placeholder="Click here to reply"></textarea>
+
+                            <div class="actions">
+
+                                <button tabindex="3" type="submit" class="btn btn-success">Send message</button>
+
+                            </div>
+
+                        </fieldset>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- end: Content -->
+    </div><!--/#content.span10-->
+</div><!--/fluid-row-->
+
+<div class="modal hide fade" id="myModal">
+    <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">×</button>
+        <h3>Settings</h3>
+    </div>
+    <div class="modal-body">
+        <p>Here settings can be configured...</p>
+    </div>
+    <div class="modal-footer">
+        <a href="#" class="btn" data-dismiss="modal">Close</a>
+        <a href="#" class="btn btn-primary">Save changes</a>
+    </div>
+</div>
