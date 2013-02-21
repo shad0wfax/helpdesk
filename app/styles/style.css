@@ -497,7 +497,7 @@ a.brand span {
 	border-right: none;
 	padding-bottom: 1px;
 	text-align: center !important;
-	font-size: 10px;
+	font-size: 12px;
 }
 
 .sidebar-nav > ul > li > ul {
@@ -580,7 +580,8 @@ a.brand span {
           	border-radius: 0px;
 }
 
-.nav-tabs.nav-stacked  > li.active > a {
+/* Akshay changed li.active to a.active wrt ember linkTo tag */
+.nav-tabs.nav-stacked  > li > a.active {
 	margin: 1px 0px 0px 0px;
   	border: 2px solid #eee;
 	border-right: none;
@@ -593,7 +594,7 @@ a.brand span {
 	z-index: 20;
 }
 
-.nav-tabs.nav-stacked  > li.active > ul {
+.nav-tabs.nav-stacked  > a.active > ul {
 	margin:-4px 0px 0px 0px;
   	border: 2px solid #eee;
 	padding: 5px 0px;

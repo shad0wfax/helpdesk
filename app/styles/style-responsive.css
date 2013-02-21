@@ -331,11 +331,11 @@
 		margin-right: 10px;
 	}
 	
-	.nav-tabs.nav-stacked  > li.active > a {
+	.nav-tabs.nav-stacked  > li > a.active {
 	  	border: 0px;
 	}
 	
-	.nav-tabs.nav-stacked  > li.active > ul {
+	.nav-tabs.nav-stacked  > a.active > ul {
 	  	border: 0px;
 	}
 	

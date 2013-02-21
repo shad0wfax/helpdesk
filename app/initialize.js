@@ -8,11 +8,19 @@ require('templates/_navbar');
 require('templates/dashboard');
 require('templates/_footer');
 require('templates/_leftnav');
+require('templates/tickets');
 
 //////////////////////////////////
 // Models
 //////////////////////////////////
 
+/////////////////////////////////
+// Store
+/////////////////////////////////
+// Helpdesk.Store = DS.Store.extend({
+//   revision: 11
+// });
+require('models/store/store');
 
 
 /////////////////////////////////
@@ -38,15 +46,6 @@ require('routes/IndexRoute');
 // Init
 /////////////////////////////////
 require('init/DashboardInit');
-
-
-/////////////////////////////////
-// Store
-/////////////////////////////////
-	// Helpdesk.Store = DS.Store.extend({
-	//   revision: 11
-	// });
-require('store');
 
 
 /////////////////////////////////

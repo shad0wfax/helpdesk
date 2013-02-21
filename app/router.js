@@ -8,5 +8,6 @@ Helpdesk.Router.map(function() {
 	this.resource('tickets', function() {
 		this.resource('ticket', {path: ':ticket_category' });
 	});
-
+    this.resource('configure', {paths: "/configure"});
+    this.resource('admin', {paths: "/admin"});
 });
