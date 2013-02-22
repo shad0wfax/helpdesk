@@ -4,15 +4,17 @@ window.Helpdesk = require('app');
 // Templates
 //////////////////////////////////
 require('templates/application');
-require('templates/_navbar');
+require('templates/nav/_navbar');
+require('templates/nav/_footer');
+require('templates/nav/_leftnav');
 require('templates/dashboard');
-require('templates/_footer');
-require('templates/_leftnav');
 require('templates/tickets');
 
 //////////////////////////////////
 // Models
 //////////////////////////////////
+require('models/Ticket');
+
 
 /////////////////////////////////
 // Store
@@ -26,7 +28,7 @@ require('models/store/store');
 /////////////////////////////////
 // Controllers
 /////////////////////////////////
-
+require('controllers/TicketsController');
 
 
 /////////////////////////////////
@@ -40,6 +42,7 @@ require('views/DashboardView');
 // Routes
 /////////////////////////////////
 require('routes/IndexRoute');
+require('routes/TicketsHighlightsRoute');
 
 
 /////////////////////////////////

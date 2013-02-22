@@ -2,7 +2,8 @@
 // to use the RESTAdapter or your own adapter.
 Helpdesk.Store = DS.Store.extend({
     revision: 11,
-    adapter: DS.LSAdapter.create()
+    //adapter: DS.LSAdapter.create()
+    adapter: "DS.FixtureAdapter"
 });
 
 // Model specific adapters

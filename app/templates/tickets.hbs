@@ -4,7 +4,7 @@
 <div class="row-fluid">
 
     <!-- Left nav -->
-    {{partial "leftnav"}}
+    {{partial "nav/leftnav"}}
 
     <!-- start: Content -->
     <div id="content" class="span11">
@@ -14,95 +14,36 @@
                 <ul class="message nav nav-list">
                     <li class="nav-header">Captures</li>
                     <li class="divider"></li>
-                    <li>{{#linkTo tickets.ticket "highlights"}} {{t tickets.nav.highlights}} {{/linkTo}}</li>
-                    <li>{{#linkTo tickets.ticket "photos"}} {{t tickets.nav.photos}} {{/linkTo}}</li>
-                    <li>{{#linkTo tickets.ticket "audios"}} {{t tickets.nav.audios}} {{/linkTo}}</li>
-                    <li>{{#linkTo tickets.ticket "videos"}} {{t tickets.nav.videos}} {{/linkTo}}</li>
-                    <li>{{#linkTo tickets.ticket "forms"}} {{t tickets.nav.text}} {{/linkTo}}</li>
-                    <li>{{#linkTo tickets.ticket "emails"}} {{t tickets.nav.emails}} {{/linkTo}}</li>
-                    <li>{{#linkTo tickets.ticket "all"}} {{t tickets.nav.all}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.highlights}} {{t tickets.nav.highlights}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.photos}} {{t tickets.nav.photos}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.audios}} {{t tickets.nav.audios}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.videos}} {{t tickets.nav.videos}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.text}} {{t tickets.nav.text}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.emails}} {{t tickets.nav.emails}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.all}} {{t tickets.nav.all}} {{/linkTo}}</li>
                     <li class="nav-header">Tickets by status</li>
                     <li class="divider"></li>
-                    <li>{{#linkTo tickets.ticket "open"}} {{t tickets.nav.open}} {{/linkTo}}</li>
-                    <li>{{#linkTo tickets.ticket "pending"}} {{t tickets.nav.pending}} {{/linkTo}}</li>
-                    <li>{{#linkTo tickets.ticket "hold"}} {{t tickets.nav.hold}} {{/linkTo}}</li>
-                    <li>{{#linkTo tickets.ticket "closed"}} {{t tickets.nav.closed}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.open}} {{t tickets.nav.open}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.pending}} {{t tickets.nav.pending}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.hold}} {{t tickets.nav.hold}} {{/linkTo}}</li>
+                    <li>{{#linkTo tickets.closed}} {{t tickets.nav.closed}} {{/linkTo}}</li>
 
                 </ul>
              </div>
 
 
-            <div class="span6 dark">
-                <h1>Inbox</h1>
+            <div class="span6 dark" style="height: 100%;">
+                <h4>{{ticketsFor}}</h4>
 
                 <ul class="messagesList noMarginLeft">
+                    {{#each ticket in controller}}
+                        <li>
+                            {{#linkTo ticket}}
+                                <span class="label">{{ticket.from}}</span>{{ticket.comments}}</span><span class="date">{{ticket.created}}</span>
+                            {{/linkTo}}
+                        </li>
 
-                    <li>
-                        <span class="from"><span class="glyphicons star"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title"><span class="label label-warning">problem</span> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek</span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek</span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons star"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title"><span class="label label-success">task</span> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek</span><span class="title"><span class="label label-info">information</span> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons star"><i></i></span> Lukasz Holeczek</span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek</span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons star"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek</span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek</span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons star"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek</span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons star"><i></i></span> Lukasz Holeczek</span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek <span class="glyphicons paperclip"><i></i></span></span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
-                    <li>
-                        <span class="from"><span class="glyphicons dislikes"><i></i></span> Lukasz Holeczek</span><span class="title">Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..</span><span class="date">Today, <b>3:47 PM</b></span>
-                    </li>
+                    {{/each}}
 
                 </ul>
 
