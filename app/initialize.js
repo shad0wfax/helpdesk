@@ -9,6 +9,10 @@ require('templates/nav/_footer');
 require('templates/nav/_leftnav');
 require('templates/dashboard');
 require('templates/tickets');
+require('templates/ticket_frags/_tickets_side_panel');
+require('templates/ticket_frags/_tickets_list');
+require('templates/ticket_frags/_ticket_details');
+require('templates/ticketIndex');
 
 //////////////////////////////////
 // Models
@@ -43,6 +47,7 @@ require('views/DashboardView');
 /////////////////////////////////
 require('routes/IndexRoute');
 require('routes/TicketsHighlightsRoute');
+require('routes/TicketsTicketRoute');
 
 
 /////////////////////////////////

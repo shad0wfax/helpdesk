@@ -1,0 +1,14 @@
+
+    <li>{{#linkTo tickets.highlights}} {{t tickets.nav.highlights}} {{/linkTo}}</li>
+    <li>{{#linkTo tickets.photos}} {{t tickets.nav.photos}} {{/linkTo}}</li>
+    <li>{{#linkTo tickets.audios}} {{t tickets.nav.audios}} {{/linkTo}}</li>
+    <li>{{#linkTo tickets.videos}} {{t tickets.nav.videos}} {{/linkTo}}</li>
+    <li>{{#linkTo tickets.text}} {{t tickets.nav.text}} {{/linkTo}}</li>
+    <li>{{#linkTo tickets.emails}} {{t tickets.nav.emails}} {{/linkTo}}</li>
+    <li>{{#linkTo tickets.all}} {{t tickets.nav.all}} {{/linkTo}}</li>
+    <li class="nav-header">Tickets by status</li>
+    <li class="divider"></li>
+    <li>{{#linkTo tickets.open}} {{t tickets.nav.open}} {{/linkTo}}</li>
+    <li>{{#linkTo tickets.pending}} {{t tickets.nav.pending}} {{/linkTo}}</li>
+    <li>{{#linkTo tickets.hold}} {{t tickets.nav.hold}} {{/linkTo}}</li>
+    <li>{{#linkTo tickets.closed}} {{t tickets.nav.closed}} {{/linkTo}}</li>

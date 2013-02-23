@@ -1,0 +1,12 @@
+<h4>{{ticketsFor}}</h4>
+
+<ul class="messagesList noMarginLeft">
+    {{#each ticket in controller}}
+        <li>
+            {{#linkTo ticket ticket}}
+                <span class="label">{{ticket.from}}</span>{{ticket.comments}}</span><span class="date">{{ticket.created}}</span>
+            {{/linkTo}}
+        </li>
+
+    {{/each}}
+</ul>

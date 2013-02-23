@@ -11,116 +11,24 @@
         <div class="row-fluid">
 
             <div class="span2">
-                <ul class="message nav nav-list">
-                    <li class="nav-header">Captures</li>
-                    <li class="divider"></li>
-                    <li>{{#linkTo tickets.highlights}} {{t tickets.nav.highlights}} {{/linkTo}}</li>
-                    <li>{{#linkTo tickets.photos}} {{t tickets.nav.photos}} {{/linkTo}}</li>
-                    <li>{{#linkTo tickets.audios}} {{t tickets.nav.audios}} {{/linkTo}}</li>
-                    <li>{{#linkTo tickets.videos}} {{t tickets.nav.videos}} {{/linkTo}}</li>
-                    <li>{{#linkTo tickets.text}} {{t tickets.nav.text}} {{/linkTo}}</li>
-                    <li>{{#linkTo tickets.emails}} {{t tickets.nav.emails}} {{/linkTo}}</li>
-                    <li>{{#linkTo tickets.all}} {{t tickets.nav.all}} {{/linkTo}}</li>
-                    <li class="nav-header">Tickets by status</li>
-                    <li class="divider"></li>
-                    <li>{{#linkTo tickets.open}} {{t tickets.nav.open}} {{/linkTo}}</li>
-                    <li>{{#linkTo tickets.pending}} {{t tickets.nav.pending}} {{/linkTo}}</li>
-                    <li>{{#linkTo tickets.hold}} {{t tickets.nav.hold}} {{/linkTo}}</li>
-                    <li>{{#linkTo tickets.closed}} {{t tickets.nav.closed}} {{/linkTo}}</li>
-
-                </ul>
-             </div>
-
-
-            <div class="span6 dark" style="height: 100%;">
-                <h4>{{ticketsFor}}</h4>
-
-                <ul class="messagesList noMarginLeft">
-                    {{#each ticket in controller}}
-                        <li>
-                            {{#linkTo ticket}}
-                                <span class="label">{{ticket.from}}</span>{{ticket.comments}}</span><span class="date">{{ticket.created}}</span>
-                            {{/linkTo}}
-                        </li>
-
-                    {{/each}}
-
-                </ul>
-
+                <!-- Ticket side panel -->
+                {{partial "ticket_frags/tickets_side_panel"}}
             </div>
+
+
+            <div class="span10 dark" style="height: 100%;">
+                <!-- Ticket listing -->
+                {{partial "ticket_frags/tickets_list"}}
+            </div>
+
+
+            <!--
             <div class="span4 noMarginLeft">
-
-                <div class="message dark">
-
-                    <div class="header">
-                        <h1>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.."</h1>
-                        <div class="from"><i class="halflings-icon user"></i> <b>Lukasz Holeczek</b> / lukasz@holeczek.pl</div>
-                        <div class="date"><i class="halflings-icon time"></i> Today, <b>3:47 PM</b></div>
-
-                        <div class="menu"></div>
-
-                    </div>
-
-                    <div class="content">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <blockquote>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </blockquote>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                    </div>
-
-                    <div class="attachments">
-                        <ul>
-                            <li>
-                                <span class="label label-important">zip</span> <b>bootstrap.zip</b> <i>(2,5MB)</i>
-									<span class="quickMenu">
-										<a href="#" class="glyphicons search"><i></i></a>
-										<a href="#" class="glyphicons share"><i></i></a>
-										<a href="#" class="glyphicons cloud-download"><i></i></a>
-									</span>
-                            </li>
-                            <li>
-                                <span class="label label-info">txt</span> <b>readme.txt</b> <i>(7KB)</i>
-									<span class="quickMenu">
-										<a href="#" class="glyphicons search"><i></i></a>
-										<a href="#" class="glyphicons share"><i></i></a>
-										<a href="#" class="glyphicons cloud-download"><i></i></a>
-									</span>
-                            </li>
-                            <li>
-                                <span class="label label-success">xls</span> <b>spreadsheet.xls</b> <i>(984KB)</i>
-									<span class="quickMenu">
-										<a href="#" class="glyphicons search"><i></i></a>
-										<a href="#" class="glyphicons share"><i></i></a>
-										<a href="#" class="glyphicons cloud-download"><i></i></a>
-									</span>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <form class="replyForm"method="post" action="">
-
-                        <fieldset>
-                            <textarea tabindex="3" class="input-xlarge span12" id="message" name="body" rows="12" placeholder="Click here to reply"></textarea>
-
-                            <div class="actions">
-
-                                <button tabindex="3" type="submit" class="btn btn-success">Send message</button>
-
-                            </div>
-
-                        </fieldset>
-
-                    </form>
-
-                </div>
-
+                <!-- Ticket details - ->
+                {{!
+                {{partial "ticket_frags/ticket_details"}}
             </div>
-
+            -->
         </div>
 
 
