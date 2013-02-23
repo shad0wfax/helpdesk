@@ -17,7 +17,7 @@ require('templates/ticket');
 //////////////////////////////////
 // Models
 //////////////////////////////////
-require('models/Ticket');
+require('models/ticket');
 
 
 /////////////////////////////////
@@ -32,28 +32,28 @@ require('models/store/store');
 /////////////////////////////////
 // Controllers
 /////////////////////////////////
-require('controllers/TicketsController');
+require('controllers/tickets_controller');
 
 
 /////////////////////////////////
 // Views
 /////////////////////////////////
-require('views/DashboardView');
+require('views/dashboard_view');
 
 
 
 /////////////////////////////////
 // Routes
 /////////////////////////////////
-require('routes/IndexRoute');
-require('routes/TicketsHighlightsRoute');
-require('routes/TicketsTicketRoute');
+require('routes/index_route');
+require('routes/tickets_highlights_route');
+require('routes/tickets_ticket_route');
 
 
 /////////////////////////////////
 // Init
 /////////////////////////////////
-require('init/DashboardInit');
+require('init/dashboard_init');
 
 
 /////////////////////////////////
