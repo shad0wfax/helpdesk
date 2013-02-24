@@ -39,8 +39,8 @@ require('controllers/tickets_controller');
 // Views
 /////////////////////////////////
 require('views/dashboard_view');
-
-
+require('views/tickets_highlights_view');
+require('views/tickets_ticket_view');
 
 /////////////////////////////////
 // Routes

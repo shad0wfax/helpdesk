@@ -17,5 +17,4 @@ Helpdesk.TicketsHighlightsRoute = Ember.Route.extend({
         console.log("Highlights model function called.  Return all highlight models ");
         return Helpdesk.Ticket.find();
     }
-
 });

@@ -3,7 +3,7 @@
 <ul class="messagesList noMarginLeft">
     {{#each ticket in controller}}
         <li>
-            {{#linkTo ticket ticket}}
+            {{#linkTo tickets.ticket ticket}}
                 <span class="label">{{ticket.from}}</span>{{ticket.comments}}</span><span class="date">{{ticket.created}}</span>
             {{/linkTo}}
         </li>

@@ -18,9 +18,10 @@ Helpdesk.Router.map(function() {
         this.route("pending");
         this.route("hold");
         this.route("closed");
+
+        this.route("ticket", { path: "/tickets/:ticket_id" });
     });
 
-    this.route("ticket", { path: "/tickets/:ticket_id" });
 
     this.resource("configure");
     this.resource("admin");
