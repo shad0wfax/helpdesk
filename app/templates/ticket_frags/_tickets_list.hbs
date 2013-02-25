@@ -1,12 +1,22 @@
-<h4>{{ticketsFor}}</h4>
+<div class="span2">
+    <!-- Ticket side panel -->
+    {{partial "ticket_frags/tickets_side_panel"}}
+</div>
 
-<ul class="messagesList noMarginLeft">
-    {{#each ticket in controller}}
-        <li>
-            {{#linkTo tickets.ticket ticket}}
-                <span class="label">{{ticket.from}}</span>{{ticket.comments}}</span><span class="date">{{ticket.created}}</span>
-            {{/linkTo}}
-        </li>
 
-    {{/each}}
-</ul>
+<div class="span10 dark" style="height: 100%;">
+    <h4>{{ticketsFor}}</h4>
+
+    <ul class="messagesList noMarginLeft">
+        {{#each ticket in controller}}
+            <li>
+                {{#linkTo tickets.ticket ticket}}
+                    <span class="label">{{ticket.from}}</span>{{ticket.comments}}</span><span class="date">{{ticket.created}}</span>
+                {{/linkTo}}
+            </li>
+
+        {{/each}}
+    </ul>
+</div>
+
+
