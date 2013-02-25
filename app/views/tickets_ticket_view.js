@@ -1,5 +1,5 @@
 Helpdesk.TicketsTicketView = Ember.View.extend({
-    templateName: "ticket_frags/_ticket_details",
+    templateName: "ticket_frags/ticket_details",
 
     didInsertElement: function() {
         //alert('did insert DashboardView ');

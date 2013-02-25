@@ -5,26 +5,18 @@
 
 
 <div class="span10 dark" style="height: 100%;">
-    <div class="message dark">
+    <div class="message">
 
         <div class="header">
-            <h1>"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.."</h1>
-            <div class="from"><i class="halflings-icon user"></i> <b>Lukasz Holeczek</b> / lukasz@holeczek.pl</div>
-            <div class="date"><i class="halflings-icon time"></i> Today, <b>3:47 PM</b></div>
-
-            <div class="menu"></div>
+            <h1>{{controller.model.type}} <span class="label">{{controller.model.status}}</span></h1>
+            <div class="from"><i class="halflings-icon user"></i>{{controller.model.from}}</div>
+            <div class="date"><i class="halflings-icon time"></i> {{controller.model.created}}</div>
 
         </div>
 
         <div class="content">
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </p>
-            <blockquote>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-            </blockquote>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                {{controller.model.comments}}
             </p>
         </div>
 

@@ -1,0 +1,1 @@
+Helpdesk.TicketController = Ember.ObjectController.extend();
