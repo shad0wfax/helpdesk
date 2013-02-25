@@ -41,6 +41,7 @@ require('controllers/tickets_controller');
 require('views/dashboard_view');
 require('views/tickets_highlights_view');
 require('views/tickets_ticket_view');
+require('views/application_view');
 
 /////////////////////////////////
 // Routes
